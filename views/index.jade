@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Check Your Privilege
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='reveal/reveal.min.css')
+    link(rel='stylesheet', href='theme.css')
+    link(rel='stylesheet', href='icons/style.css')
+  body
+    .reveal
+      .slides
+        section#start
+          h1.main-icon
+            span.icon-user-md
+          h1 Check Your Privilege
+          p A simple checklist to verify if you are privileged.
+          h2
+            a.image.navigate-right(href='#') Start ▶
+        section#race
+          h2 Race
+          .options
+        section#sex
+          h2 Sex
+          .options
+        section#orientation
+          h2 Orientation
+          .options
+        section#gender
+          h2 Gender
+          .options
+        section#religion
+          h2 Religion
+          .options
+        section#profession
+          h2 Profession
+          .options
+        section#status
+          h2 Status
+          .options
+        section#disability
+          h2 Disability
+          .options
+        section#height
+          h2 Height
+          .options
+        section#attractiveness
+          h2 Attractiveness
+          .options
+        section#results
+          h2 Result:
+            = ' '
+            span.privilege 0
+          .positive-result
+            h1 You Are Scum!
+            p You live a sheltered life, unaware of the hardships others face.
+          .negative-result(style='display:none')
+            h1 You Poor Thing...
+            p Life is so hard on you. All others are spoiled.
+
+          .author
+            hr
+            p
+              small Created by <a href='http://nechifor.net'>Paul Nechifor</a>.
+            p
+              small
+                a(href='https://github.com/paul-nechifor/check-your-privilege')
+                  | Get the source code.
+
+    #score
+      span Privilege:
+        = ' '
+        span.privilege 0
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script(src='reveal/head.min.js')
+    script(src='reveal/reveal.min.js')
+    script(src='script.min.js')

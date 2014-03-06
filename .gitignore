@@ -1,0 +1,8 @@
+/build
+/node_modules
+/bower_components
+/private
+.idea
+*~
+*.swp
+*.swo
