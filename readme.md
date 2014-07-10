@@ -1,7 +1,8 @@
-Check Your Privilege
-====================
+# Check Your Privilege
 
 A simple checklist to verify if you are privileged. [Take it here.][site]
+
+![Check Your Privilege screenshot](screenshot.png)
 
 ## About
 
@@ -29,5 +30,5 @@ this also minifies everything.
 
 MIT
 
-[site]: http://check-your-privilege.github.io
+[site]: http://nechifor.net/check-your-privilege
 [reveal]: https://github.com/hakimel/reveal.js
