@@ -1,6 +1,7 @@
 {
   "name": "check-your-privilege",
   "version": "0.0.1",
+  "author": "Paul Nechifor <paul@nechifor.net> (http://nechifor.net/)",
   "dependencies": {
     "grunt": ">=0.4.2",
     "grunt-browserify": ">=1.3.0",
@@ -9,6 +10,10 @@
     "grunt-contrib-jade": ">=0.10.0",
     "grunt-contrib-stylus": ">=0.11.0",
     "grunt-contrib-uglify": ">=0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paul-nechifor/check-your-privilege"
   },
   "license": "MIT"
 }
