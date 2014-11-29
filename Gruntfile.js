@@ -2,8 +2,8 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: {
-      main: ['build'],
-      nonmin: ['build/script.js']
+      main: ['cyp-build'],
+      nonmin: ['cyp-build/script.js']
     },
     copy: {
       main: {
@@ -13,11 +13,11 @@ module.exports = function (grunt) {
             cwd: 'bower_components/reveal.js',
             src: ['js/reveal.min.js', 'css/reveal.min.css', 'lib/js/*'],
             flatten: true,
-            dest: 'build/reveal'
+            dest: 'cyp-build/reveal'
           }, {
             expand: true,
             src: ['icons/**'],
-            dest: 'build'
+            dest: 'cyp-build'
           }
         ]
       }
@@ -25,14 +25,14 @@ module.exports = function (grunt) {
     stylus: {
       main: {
         files: {
-          'build/theme.css': ['styles/theme.styl']
+          'cyp-build/theme.css': ['styles/theme.styl']
         }
       }
     },
     jade: {
       main: {
         files: {
-          'build/index.html': ['views/index.jade']
+          'cyp-build/index.html': ['views/index.jade']
         }
       }
     },
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
           debug: true
         },
         files: {
-          'build/script.js': 'scripts/script.js'
+          'cyp-build/script.js': 'scripts/script.js'
         }
       }
     },
@@ -52,12 +52,12 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          'build/script.min.js': ['build/script.js']
+          'cyp-build/script.min.js': ['cyp-build/script.js']
         }
       },
       production: {
         files: {
-          'build/script.min.js': ['build/script.js']
+          'cyp-build/script.min.js': ['cyp-build/script.js']
         }
       }
     }

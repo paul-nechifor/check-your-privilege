@@ -1,4 +1,4 @@
 module.exports =
   id: 'check-your-privilege'
   title: 'Check Your Privilege'
-  staticApp: 'build'
+  staticApp: 'cyp-build'

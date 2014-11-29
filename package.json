@@ -2,14 +2,20 @@
   "name": "check-your-privilege",
   "version": "0.0.1",
   "author": "Paul Nechifor <paul@nechifor.net> (http://nechifor.net/)",
+  "scripts": {
+    "build": "intercessor",
+    "intercessor-make": "npm install && bower install && grunt"
+  },
   "dependencies": {
     "grunt": ">=0.4.2",
     "grunt-browserify": ">=1.3.0",
-    "grunt-contrib-copy": ">=0.5.0",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": ">=0.5.0",
+    "grunt-contrib-copy": ">=0.5.0",
     "grunt-contrib-jade": ">=0.10.0",
     "grunt-contrib-stylus": ">=0.11.0",
-    "grunt-contrib-uglify": ">=0.3.2"
+    "grunt-contrib-uglify": ">=0.3.2",
+    "intercessor": ">=0.3.2"
   },
   "repository": {
     "type": "git",
