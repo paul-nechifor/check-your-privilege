@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-            cwd: 'bower_components/reveal.js',
+            cwd: 'node_modules/reveal.js',
             src: ['js/reveal.min.js', 'css/reveal.min.css', 'lib/js/*'],
             flatten: true,
             dest: 'cyp-build/reveal'

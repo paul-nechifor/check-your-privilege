@@ -11,10 +11,9 @@ This is a Node package which produces a static web site. It uses
 
 ## Build
 
-Install `npm` and `bower`. Get the requirements with:
+Install `npm`. Get the requirements with:
 
     npm install
-    bower install
 
 Install `grunt` and build the development version with:
 
