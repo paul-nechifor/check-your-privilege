@@ -1,3 +1,7 @@
+# This repository has been moved to [gitlab.com/paul-nechifor/check-your-privilege](http://gitlab.com/paul-nechifor/check-your-privilege).
+
+Old readme:
+
 # Check Your Privilege
 
 A simple checklist to verify if you are privileged. [Take it here.][site]
